@@ -1,0 +1,33 @@
+body 	{
+	text-align: center;
+}
+
+button	{
+	border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 10px 23px;
+    background-color: #F95868;
+    color: #F4F3C8;
+    cursor: pointer;
+}
+
+ol	{
+	text-align: left;
+}
+
+#directions	{
+	background-color: #986A79;
+	border-radius: 25px;
+	color: #F4F3C8;
+	font-family: "Consolas", sans-serif;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	padding: 25px;
+	width:75%;
+}
+
+#game	{
+	display:none;
+}
