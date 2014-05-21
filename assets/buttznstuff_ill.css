@@ -1,0 +1,33 @@
+body {
+	background-color: white;
+}
+
+/* the entire grid of tutorials */
+#tut_grid	{
+	margin-left: 10%;
+	width:80%;
+}
+
+/* each individual tutorial view */
+.tutorial	{
+	background-color: pink;
+	display: inline-block;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: center;
+
+	height:300px;
+	width:20%;
+}
+
+/* the preview of the tutorial illustration */
+.tut_img	{
+	max-height: 70%;
+	max-width: 90%;
+	/* TODO: don't stretch the img */
+}
+
+/* the title of each tutorial */
+h3 {
+
+}
