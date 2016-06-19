@@ -30,6 +30,7 @@ body {
   position: relative;
   width: 85%;
   min-width: 400px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -73,6 +74,7 @@ button:active {
 #control_board {
   width: 85%;
   min-width: 400px;
+  max-width: 800px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: row;
