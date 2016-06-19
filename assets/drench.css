@@ -1,0 +1,302 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* body */
+/* grid */
+/* modals */
+body {
+  background-color: #373633;
+  font-family: "Lato", Calibri, Arial, sans-serif;
+  color: #ffffff;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+button {
+  border: none;
+  color: inherit;
+  background-color: #40805C;
+  cursor: pointer;
+  padding: 12px 40px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  box-shadow: 0 4px #286844;
+}
+
+button:hover {
+  box-shadow: 0 3px #286844;
+  top: 1px;
+}
+
+button:active {
+  box-shadow: 0 0 #286844;
+  top: 4px;
+}
+
+.board {
+  background-color: none;
+  border: none;
+  width: 600px;
+  text-align: center;
+  float: left;
+}
+
+.board:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.space {
+  float: left;
+  padding: 5px;
+  width: 37.5px;
+  height: 37.5px;
+}
+
+#control_board {
+  height: 600px;
+  width: 150px;
+  float: left;
+  padding: 50px;
+  text-align: center;
+  font-size: 32pt;
+}
+
+/* 
+credit for buttons:
+http://tympanus.net/Development/CreativeButtons/
+*/
+.control {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+  padding: 0;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.control:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+.control:hover {
+  top: 1px;
+}
+
+.control:active {
+  top: 3px;
+}
+
+.c1 {
+  background-color: #7fc97f;
+}
+
+.c2 {
+  background-color: #beaed4;
+}
+
+.c3 {
+  background-color: #fdc086;
+}
+
+.c4 {
+  background-color: #ffff99;
+}
+
+.c5 {
+  background-color: #386cb0;
+}
+
+.c6 {
+  background-color: #D74592;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+}
+
+.control.c1 {
+  box-shadow: 0 3px #50A950;
+}
+
+.control.c2 {
+  box-shadow: 0 3px #957EB5;
+}
+
+.control.c3 {
+  box-shadow: 0 3px #D89454;
+}
+
+.control.c4 {
+  box-shadow: 0 3px #D8D861;
+}
+
+.control.c5 {
+  box-shadow: 0 3px #1A56A4;
+}
+
+.control.c6 {
+  box-shadow: 0 3px #CB257D;
+}
+
+.control.c1:hover {
+  box-shadow: 0 2px #50A950;
+}
+
+.control.c2:hover {
+  box-shadow: 0 2px #957EB5;
+}
+
+.control.c3:hover {
+  box-shadow: 0 2px #D89454;
+}
+
+.control.c4:hover {
+  box-shadow: 0 2px #D8D861;
+}
+
+.control.c5:hover {
+  box-shadow: 0 2px #1A56A4;
+}
+
+.control.c6:hover {
+  box-shadow: 0 2px #CB257D;
+}
+
+.control.c1:active {
+  box-shadow: 0 0 #50A950;
+}
+
+.control.c2:active {
+  box-shadow: 0 0 #957EB5;
+}
+
+.control.c3:active {
+  box-shadow: 0 0 #D89454;
+}
+
+.control.c4:active {
+  box-shadow: 0 0 #D8D861;
+}
+
+.control.c5:active {
+  box-shadow: 0 0 #1A56A4;
+}
+
+.control.c6:active {
+  box-shadow: 0 0 #CB257D;
+}
+
+/***********************************
+ *           MODAL STUFF           *
+ ***********************************/
+.md {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  color: #ffffff;
+}
+
+.md-content {
+  background-color: #63997A;
+  position: relative;
+  width: 500px;
+  margin: 100px auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/*------------
+    Variants  
+  ------------*/
+.md-hd {
+  margin-bottom: 10px;
+  padding: 0.4em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #40805C;
+}
+
+.md-ft {
+  /* modal footer */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+#leaderboard_md .md-content {
+  overflow: auto;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+#leaderboard_md table {
+  width: 75%;
+  /*  margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;*/
+  margin: 20px auto 20px auto;
+  border-collapse: collapse;
+  background-color: #91B9A2;
+}
+
+#leaderboard_md table th {
+  background: #40805C;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+
+#leaderboard_md table td {
+  border-top: none;
+  padding: 5px;
+  color: #ffffff;
+}
+
+#leaderboard_md table td em {
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Mandy Knight | Drench</title>
+  <link rel='stylesheet' type='text/css' href='assets/drench.css'/>
+  <!-- <link href="assets/favicon.ico" rel="icon" type="image/x-icon" /> -->
+  
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+  <script src="js/m.js"></script>
+  <script src="js/drench.js"></script>
+
+</head>
+<body>
+
+  <div class="board" id="control_board">
+    <div class="num" id="num_moves">0</div>
+    <button class="control c1" val="1"></button>
+    <button class="control c2" val="2"></button>
+    <button class="control c3" val="3"></button>
+    <button class="control c4" val="4"></button>
+    <button class="control c5" val="5"></button>
+    <button class="control c6" val="6"></button>   
+  </div>
+
+  <div class="board" id="game_board">
+  </div>
+
+  <div class="md hidden" id="leaderboard_md">
+    <div class="md-content">
+      <table id="leaderboard_table">
+        <tr>
+          <th>Player</th>
+          <th>Score</th>
+        </tr>
+      </table>
+      <button class="md-close">close hi-scores</button>
+    </div>
+  </div>
+
+  <div class="md hidden" id="hi_score_prompt">
+    <div class="md-content">
+      <div class="md-hd">
+        You won! :D
+      </div>
+      <p>Your score is </p>
+      <input type="text" id="name_input" placeholder="name"></input>
+      <br/>
+      <button id="hi_score_submit_btn">submit</button>
+      <button class="md-close">cancel</button>
+    </div>
+  </div>
+  
+</body>
+</html>
