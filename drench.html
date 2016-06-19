@@ -13,43 +13,51 @@
 </head>
 <body>
 
-  <div class="board" id="control_board">
-    <div class="num" id="num_moves">0</div>
-    <button class="control c1" val="1"></button>
-    <button class="control c2" val="2"></button>
-    <button class="control c3" val="3"></button>
-    <button class="control c4" val="4"></button>
-    <button class="control c5" val="5"></button>
-    <button class="control c6" val="6"></button>   
-  </div>
+  
+<div class="board" id="control_board">
+  <div class="num" id="num_moves">0</div>
+  <button class="control c1" val="1"></button>
+  <button class="control c2" val="2"></button>
+  <button class="control c3" val="3"></button>
+  <button class="control c4" val="4"></button>
+  <button class="control c5" val="5"></button>
+  <button class="control c6" val="6"></button>   
+</div>
 
+<div class="container" id="game_container">
+  
   <div class="board" id="game_board">
+    
   </div>
+</div>
 
-  <div class="md hidden" id="leaderboard_md">
-    <div class="md-content">
-      <table id="leaderboard_table">
-        <tr>
-          <th>Player</th>
-          <th>Score</th>
-        </tr>
-      </table>
-      <button class="md-close">close hi-scores</button>
-    </div>
+<div class="md hidden" id="leaderboard_md">
+  <div class="md-content">
+    <table id="leaderboard_table">
+      <tr>
+        <th>Player</th>
+        <th>Score</th>
+      </tr>
+    </table>
+    <button class="md-close">close hi-scores</button>
   </div>
+</div>
 
-  <div class="md hidden" id="hi_score_prompt">
-    <div class="md-content">
-      <div class="md-hd">
-        You won! :D
-      </div>
-      <p>Your score is </p>
-      <input type="text" id="name_input" placeholder="name"></input>
-      <br/>
-      <button id="hi_score_submit_btn">submit</button>
-      <button class="md-close">cancel</button>
+<div class="md hidden" id="hi_score_prompt">
+  <div class="md-content">
+    <div class="md-hd">
+      You won! :D
     </div>
+    <p>Your score is </p>
+    <input type="text" id="name_input" placeholder="name"></input>
+    <br/>
+    <button id="hi_score_submit_btn">submit</button>
+    <button class="md-close">cancel</button>
   </div>
+</div>
+
+
+<!--<button id="debug_btn">debug</button>-->
   
 </body>
 </html>

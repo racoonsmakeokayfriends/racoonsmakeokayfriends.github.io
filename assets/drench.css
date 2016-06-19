@@ -5,7 +5,6 @@
 }
 
 /* body */
-/* grid */
 /* modals */
 body {
   background-color: #373633;
@@ -13,12 +12,37 @@ body {
   color: #ffffff;
 }
 
-input {
-  border: none;
-  outline: none;
-  padding: 3px;
-  margin-bottom: 10px;
-  border-radius: 2px;
+.row {
+  height: 6.25%;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.space {
+  float: left;
+  padding: 5px;
+  width: 6.25%;
+  height: 100%;
+}
+
+#game_container {
+  position: relative;
+  width: 85%;
+  min-width: 400px;
+  margin: auto;
+}
+
+#game_container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#game_board {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 button {
@@ -26,10 +50,8 @@ button {
   color: inherit;
   background-color: #40805C;
   cursor: pointer;
-  padding: 12px 40px;
   border-radius: 10px;
   display: inline-block;
-  margin: 15px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -48,65 +70,25 @@ button:active {
   top: 4px;
 }
 
-.board {
-  background-color: none;
-  border: none;
-  width: 600px;
-  text-align: center;
-  float: left;
-}
-
-.board:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.space {
-  float: left;
-  padding: 5px;
-  width: 37.5px;
-  height: 37.5px;
-}
-
 #control_board {
-  height: 600px;
-  width: 150px;
-  float: left;
-  padding: 50px;
-  text-align: center;
+  width: 85%;
+  min-width: 400px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+  margin: 10px auto;
   font-size: 32pt;
 }
 
-/* 
-credit for buttons:
-http://tympanus.net/Development/CreativeButtons/
-*/
 .control {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  margin-top: 5px;
-  padding: 0;
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none;
-}
-
-.control:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-}
-
-.control:hover {
-  top: 1px;
-}
-
-.control:active {
-  top: 3px;
+  border: none;
 }
 
 .c1 {
@@ -131,14 +113,6 @@ http://tympanus.net/Development/CreativeButtons/
 
 .c6 {
   background-color: #D74592;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  display: inline-block;
-  outline: none;
-  position: relative;
 }
 
 .control.c1 {
@@ -211,6 +185,10 @@ button {
 
 .control.c6:active {
   box-shadow: 0 0 #CB257D;
+}
+
+.hidden {
+  display: none;
 }
 
 /***********************************
@@ -299,4 +277,12 @@ button {
   font-style: normal;
   font-weight: bold;
   color: #ffffff;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: 2px;
 }

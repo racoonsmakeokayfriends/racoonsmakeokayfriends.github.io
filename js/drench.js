@@ -13,8 +13,9 @@ $(document).ready(function()   {
   
   function init_game()   {
     $('#game_board').html('');
-    var col, html_str;
+    var col, html_str, row_str;
     for (var i=1; i<=GAME_SIZE; i++)  {
+      row_str ='<div class="row">';
       for (var j=1; j<=GAME_SIZE; j++)  {
         col = Math.floor(Math.random()*NUM_COLORS)+1;
         col = col.toString();
@@ -22,8 +23,10 @@ $(document).ready(function()   {
         html_str += '" row="'+i.toString();
         html_str += '" col="'+j.toString();
         html_str += '"></div>'
-        $('#game_board').append(html_str);
+        row_str += html_str;
       }
+      row_str += '</div>'
+      $('#game_board').append(row_str);
     }
 
     NUM_MOVES = 0;
@@ -70,10 +73,12 @@ $(document).ready(function()   {
     $('#hi_score_prompt p').html('your score is '+NUM_MOVES.toString());
   }
   
+  // completes the turn by absorbing all ajacent matching blocks
   function color_blocks(new_color)   {
     // credit: 
     // http://www.codeproject.com/Articles/631666/Zyan-Drench-A-Game-for-Android-with-Wifi-Support
     var color = get_color(R0,C0);
+    // this is so we don't increment the number of moves if the same color was clicked
     if (color == new_color)   {
       return false;
     }
@@ -94,7 +99,7 @@ $(document).ready(function()   {
         var newC = parseInt(p[1])+adjacents[i][1];
         
         
-        // skip invalid point
+        // skip invalid point  (edges)
         if (newR < 1 || newR > GAME_SIZE || newC < 1 || newC > GAME_SIZE) {
           continue;
         }
