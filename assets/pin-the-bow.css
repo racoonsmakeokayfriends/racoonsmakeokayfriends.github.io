@@ -1,0 +1,117 @@
+body {
+    font-family: "Consolas", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #E9E0D6;
+    background-color: #83BF17;
+}
+
+canvas  {
+    display: none;
+    width:65%;
+    height:600px;
+    background-color: #F15D58;
+    /*border: 8px solid blue;*/
+    border-radius: 25px;
+    margin-right: 5%;
+    float: right;
+}
+
+#title  {
+    margin-top: 10px;
+}
+
+#score_board    {
+    display: none;
+    width:350px;
+    height:600px;
+    background-color: #363635;
+/*    border: 8px solid blue;*/
+    border-radius: 25px;
+    margin-left: 5%;
+    float: left;
+}
+
+#timer  {
+    text-align: center;
+    font-size: 32pt;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+
+#points    {
+    font-size: 24pt; 
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+#new_round {
+    display: none;
+}
+
+#game_over {
+    display: none; 
+    /*padding-top: -100px;  */
+}
+
+.setup_mode {
+    position: absolute;
+    border-radius: 25px;
+    top: 150px;
+    left: 400px;
+    right: 400px;
+    bottom: 250px;
+    color: #DCDDCD;
+    background-color: #363635;
+    padding: 100px;
+    z-index: 100;
+}
+
+input   {
+    margin: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: "Consolas", sans-serif;
+    padding: 10px 23px;
+    background-color: #E9E0D6;
+    color: #354458;
+    cursor: pointer;
+}
+
+#kitty_pic  {
+    height:100%;
+    float:left;
+    display:inline-block;
+    margin-right: 25px;
+}
+
+#about  {
+    display: none;
+    position: absolute;
+    border-radius: 25px;
+    top: 150px;
+    left: 250px;
+    right: 250px;
+    bottom: 50px;
+    color: #DCDDCD;
+    background-color: #363635;
+    padding: 15px;
+    z-index: 100;
+}
+
+footer  {
+    position: absolute;
+    bottom: 0px;
+}
+
+/*
+#363635 - black
+#F15D58 - pink
+#DCDDCD - white
+#83BF17 - green
+*/

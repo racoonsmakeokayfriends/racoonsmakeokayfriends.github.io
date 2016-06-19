@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pin-the-Bow</title>
+    <link rel='stylesheet' type='text/css' href='pin-the-bow.css'/>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+    <script type='text/javascript' src='pin-the-bow.js'></script>
+  </head>
+  <body>
+    <!-- <h1 id='title'>Pin the Bow on the Kitty!</h1> -->
+    <img id="title" src="http://s6.postimg.org/cmsee3atd/bow_title1.png"/></br></br></br>
+    <!-- start game -->
+    <div class="setup_mode" id="init_game">
+      <p>Happy (belated) birthday Jessica! You get your very own kitty game!</p>
+      <button id="init_game_btn">start pinning some cats!</button>
+    </div>
+    
+    <!-- game play -->
+    <canvas id='a' width='500' height='500'>
+      No canvas :(
+    </canvas>
+    
+    <!-- score board -->
+    <div id="score_board">
+      <h2>Time Left:</h2>
+      <div id="timer"></div>
+      <h2>Kitties Pinned:</h2>
+      <div id="points"></div>
+    </div>
+
+    <!-- game over -->
+    <div class="setup_mode" id="game_over">
+      <h2 style="margin-top:-20px;">Game Over</h2>
+      <p id="game_score"></p>
+      Would you like to play again? <br /><br />
+      <button id='play_again_yes'>yes</button>
+      <button id='play_again_no'>no</button>      
+    </div>
+
+    <div id="about">
+      <img id="kitty_pic" src="https://scontent-a-sjc.xx.fbcdn.net/hphotos-prn2/t1/1623694_239648729541315_1009796925_n.jpg"/>
+      <h3>This game is based on four <i>real live</i> cats!</h3>      
+      The white one is Bubbles, the grey one is Smokey, the black one is Cleo, and Richard Nixon is the orange kitty!
+      They like to nap, eat, and sometimes play, but they <i>never</i> want to wear bows! But they look so gosh darn cute!
+      I made this game for my sister so she could finally, with ease, put bows on our kitties!
+      <br/><br/>
+      <button id="about_back_btn">back</button>
+    </div>
+
+    <footer>
+      <button id="about_btn">about</button>
+    </footer>
+   
+    
+  </body>
+</html>
