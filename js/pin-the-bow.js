@@ -54,12 +54,12 @@ $(document).ready(function()    {
 
     function populate_bow_images()    {
         bows = [];
-        bows[0] = "http://s6.postimg.org/4w2s6ly0t/bt1.png";
-        bows[1] = "http://s6.postimg.org/96hg2733x/bt2.png";
-        bows[2] = "http://s6.postimg.org/p603lqz5p/bt3.png";
-        bows[3] = "http://s6.postimg.org/jfo5wmc8t/bt4.png";
-        bows[4] = "http://s6.postimg.org/4na9dsrjx/bt5.png";
-        bows[5] = "http://s6.postimg.org/ntnggz81p/bt6.png";
+        bows[0] = "./assets/pin-the-bow/bowtie1.png";
+        bows[1] = "./assets/pin-the-bow/bowtie2.png";
+        bows[2] = "./assets/pin-the-bow/bowtie3.png";
+        bows[3] = "./assets/pin-the-bow/bowtie4.png";
+        bows[4] = "./assets/pin-the-bow/bowtie5.png";
+        bows[5] = "./assets/pin-the-bow/bowtie6.png";
         return bows;
     };
 
