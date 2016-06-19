@@ -8,3 +8,7 @@ Here are things I've done:
 	* Kitty Bejeweled
 * Added the kitty images to the assets folder (the images on postimage are gone).
 
+Things I need to do:
+
+* Link back to the home page
+* Add a contact me/about me section
