@@ -11,6 +11,9 @@ Here are things I've done:
 * Added the kitty images to the assets folder (the images on postimage are gone).
 * Got a black knight chess piece for a favicon
 * Updated Drench to be more responsive
+* Seperated into own git repo:
+	drench
+	pin the bow
 
 Things I need to do:
 
@@ -22,7 +25,11 @@ Things I need to do:
 * pyramids
 * Seperate games from tools
 * pixi.js for kitty games
-
+* seperate projects into their own repos:
+	* kitty bejewled
+	* color scale
+	* color scale 2d
+	
 
 
 
