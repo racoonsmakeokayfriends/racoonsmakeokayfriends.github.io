@@ -14,21 +14,36 @@ Here are things I've done:
 * Seperated into own git repo:
 	drench
 	pin the bow
-
-Things I need to do:
-
-* Link back to the home page
-* Add a contact me/about me section
-* Add the arch inkscape extension
-* Write about my pothole reporter app and it's pitfalls </3
-* Add the star rating
-* pyramids
-* Seperate games from tools
-* pixi.js for kitty games
-* seperate projects into their own repos:
 	* kitty bejewled
 	* color scale
 	* color scale 2d
+* pixi.js for kitty games
+* hover effects on home
+* added contact info
+
+
+
+
+Things I need to do:
+
+
+______________________________________________HOME_
+* Add about me section
+* Seperate games from tools
+* add links yo pyramids and star
+
+_______________________________________ADD PROJECT_
+* Add
+	* inkscape arch extension
+	* pothole reporter app and it's pitfalls
+
+
+
+_______________________________________FIX PROJECT_
+* update repos for kitty games
+* Projects all have links to:
+	* home
+	* their own github repo
 	
 
 
