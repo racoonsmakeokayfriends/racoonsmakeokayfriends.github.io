@@ -12,7 +12,9 @@
   width: 100%;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
-
+.hidden {
+  display: none;
+}
 figure {
   flex-basis: 33.33%;
   height: 250px;
@@ -47,8 +49,11 @@ figure img {
   position: relative;
   display: block;
   min-height: 100%;
-  max-width: 100%;
+  min-width: 100%;
   opacity: 0.8;
+  /* -ms-transform: rotate(90deg); /* IE 9 */
+  /* -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  /* transform: rotate(90deg); /* */
 }
 
 figure figcaption {
