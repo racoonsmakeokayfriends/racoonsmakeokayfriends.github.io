@@ -424,9 +424,9 @@ figure.effect-sadie h2 {
   top: 50%;
   left: 0;
   width: 100%;
-  color: #cdcdcd;
-  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
-  transition: transform 0.35s, color 0.35s;
+  color: #fff;
+  -webkit-transition: -webkit-transform 0.35s, letter-spacing 0.35s;
+  transition: transform 0.35s, letter-spacing 0.35s;
   -webkit-transform: translate3d(0,-50%,0);
   transform: translate3d(0,-50%,0);
 }
@@ -452,7 +452,7 @@ figure.effect-sadie:hover img {
   filter: grayscale(100%);
 }
 figure.effect-sadie:hover h2 {
-  color: #fff;
+  letter-spacing: 0.2em;
   -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
   transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
 }

@@ -29,13 +29,11 @@ body {
   flex-basis: 33.33%;
   height: 250px;
   text-align: center;
-  background-color: #FF6B6B;
   border: 1px solid white;
   color: #F7FFF7;
 }
 
 .portfolio-item:hover {
-  background-color: #ef5c5f;
 }
 
 .portfolio-item.header {
@@ -50,7 +48,6 @@ body {
   overflow: hidden;
   margin: 0px;
   min-width: 320px;
-  background: #FF6B6B;
   text-align: center;
   cursor: pointer;
 }
