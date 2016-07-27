@@ -72,19 +72,19 @@ figure.effect-lily:hover p.e {
 /************************************************************** Oscar *****/
 /*------------------------------------------------------------------------*/
 figure.effect-oscar {
-  background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-  background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+  background: -webkit-linear-gradient(45deg, #876AB0 0%, #DBD65C 100%);
+  background: linear-gradient(45deg, #876AB0 0%, #DBD65C 100%);
 }
 
 figure.effect-oscar img.e {
-  opacity: 0.9;
+  opacity: 1;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
 figure.effect-oscar figcaption.e {
   padding: 3em;
-  background-color: rgba(58, 52, 42, 0.7);
+  /*background-color: rgba(58, 52, 42, 0.7);*/
   -webkit-transition: background-color 0.35s;
   transition: background-color 0.35s;
 }
@@ -133,7 +133,7 @@ figure.effect-oscar:hover figcaption.e {
 }
 
 figure.effect-oscar:hover img.e {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 
@@ -141,10 +141,10 @@ figure.effect-oscar:hover img.e {
 /************************************************************** Sarah *****/
 /*------------------------------------------------------------------------*/
 figure.effect-sarah {
-  background: #42b078;
 }
 
 figure.effect-sarah img.e {
+  opacity: 0.9;
   max-width: none;
   width: -webkit-calc(100% + 20px);
   width: calc(100% + 20px);
@@ -157,7 +157,8 @@ figure.effect-sarah img.e {
 }
 
 figure.effect-sarah:hover img.e {
-  opacity: 0.4;
+  background: #42b078;
+  opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -402,8 +403,8 @@ figure.effect-sadie figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-  background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+  background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 95%);
+  background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 95%);
   content: '';
   opacity: 0;
   -webkit-transform: translate3d(0,50%,0);
@@ -413,7 +414,7 @@ figure.effect-sadie img {
   max-width: none;
   width: -webkit-calc(100% + 50px);
   width: calc(100% + 50px);
-  opacity: 0.7;
+  opacity: 1;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s, -webkit-filter 0.35s;
   transition: opacity 0.35s, transform 0.35s filter:0.35s;
   -webkit-transform: translate3d(-40px, 0, 0);
