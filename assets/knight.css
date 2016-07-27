@@ -8,6 +8,7 @@
 body {
   padding-left: 200px;
   padding-right: 200px;
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 
@@ -16,7 +17,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 
@@ -25,7 +25,7 @@ body {
   display: none;
 }
 
-figure {
+.portfolio-item {
   flex-basis: 33.33%;
   height: 250px;
   text-align: center;
@@ -34,17 +34,17 @@ figure {
   color: #F7FFF7;
 }
 
-figure:hover {
+.portfolio-item:hover {
   background-color: #ef5c5f;
 }
 
-figure.header {
+.portfolio-item.header {
   flex-basis: 66.67%;
   min-width: 640px;
 }
 
 /* Common style */
-figure {
+.portfolio-item {
   position: relative;
   float: left;
   overflow: hidden;
@@ -55,7 +55,7 @@ figure {
   cursor: pointer;
 }
 
-figure img {
+.portfolio-item img {
   position: relative;
   display: block;
   min-height: 100%;
@@ -66,7 +66,7 @@ figure img {
   /* transform: rotate(90deg); /* */
 }
 
-figure figcaption {
+.portfolio-item figcaption {
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
@@ -75,13 +75,13 @@ figure figcaption {
   backface-visibility: hidden;
 }
 
-figure figcaption::before,
-figure figcaption::after {
+.portfolio-item figcaption::before,
+.portfolio-item figcaption::after {
   pointer-events: none;
 }
 
-figure figcaption,
-figure figcaption > a {
+.portfolio-item figcaption,
+.portfolio-item figcaption > a {
   position: absolute;
   top: 0;
   left: 0;
@@ -90,7 +90,7 @@ figure figcaption > a {
 }
 
 /* Anchor will cover the whole item by default */
-figure figcaption > a {
+.portfolio-item figcaption > a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -98,27 +98,27 @@ figure figcaption > a {
   opacity: 0;
 }
 
-figure h2 {
+.portfolio-item h2 {
   word-spacing: -0.15em;
   font-weight: 300;
 }
 
-figure h2 span {
+.portfolio-item h2 span {
   font-weight: 800;
 }
 
-figure h2,
-figure p {
+.portfolio-item h2,
+.portfolio-item p {
   margin: 0;
 }
 
-figure p {
+.portfolio-item p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
 
 
-
-/*-----------------*/
-/***** Apollo *****/
-/*-----------------*/
+aside.credit,
+footer {
+  text-align: center;
+}
